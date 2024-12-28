@@ -8,7 +8,30 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container mt-5">
+
+    <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h2>Welcome To CSS</h2></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#types">Types</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    <div style="background-color: rgb(252, 239, 223);"  class="container mt-3">
         <div class="card">
             <div class="card-header bg-primary text-white text-center">
                 <h2>Introduction to CSS</h2>
@@ -25,21 +48,54 @@
                     <li class="list-group-item">Improved website performance</li>
                     <li class="list-group-item">Better accessibility and user experience</li>
                 </ul>
-                <h4 class="card-title mt-4">Types of CSS</h4>
-                <p class="card-text">
-                    CSS can be applied in three ways:
-                </p>
-                <ol class="list-group list-group-numbered">
-                    <li class="list-group-item">Inline CSS: Applied directly within an HTML element using the <code>style</code> attribute.</li>
-                    <li class="list-group-item">Internal CSS: Defined within a <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code> section of the HTML document.</li>
-                    <li class="list-group-item">External CSS: Defined in a separate file with a <code>.css</code> extension and linked to the HTML document.</li>
-                </ol>
-            </div>
-            <div class="card-footer text-center">
-                <small class="text-muted">Learn more about CSS to enhance your web development skills!</small>
-            </div>
+                <br>
+                <div class="container" id="features">
+                    <h4 class="card-title"> Main Features</h4>
+                    <p class="card-text">
+                        CSS (Cascading Style Sheets) is a powerful tool for designing web pages.
+                    </p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Separation of Content and Design</li>
+                        <li class="list-group-item">Responsive Design</li>
+                        <li class="list-group-item"> Styling Text and Typography</li>
+                        <li class="list-group-item">Animations and Transitions</li>
+                        <li class="list-group-item">Backgrounds and Gradients</li>
+                        <li class="list-group-item">Custom Variables</li>
+                        <li class="list-group-item">Selectors</li>
+                        <li class="list-group-item">Box Model</li>
+                    </ul>
+                </div>
+                    <div class="container" id="types">
+
+                    <h4 class="card-title mt-4">Types of CSS</h4>
+                    <p class="card-text">
+                        CSS can be applied in three ways:
+                    </p>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">Inline CSS: Applied directly within an HTML element using the <code>style</code> attribute.</li>
+                        <li class="list-group-item">Internal CSS: Defined within a <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code> section of the HTML document.</li>
+                        <li class="list-group-item">External CSS: Defined in a separate file with a <code>.css</code> extension and linked to the HTML document.</li>
+                    </ol>
+                </div>
         </div>
     </div>
+    <br>
+    <div class="container">
+        <h2 class="card-title">Before and After Of CSS</h2>
+        <br>
+        <img src="https://cdn.jsdelivr.net/gh/MakeSchool-Tutorials/sa-2018-landing-page@master/P03-Stylin-With-CSS/assets/before_after_css_zen.jpg" class="img-thumbnail" alt="img1">
+        <br>
+        <br>
+        <img src="https://miro.medium.com/v2/resize:fit:1400/1*onZx46c_-Xio8dcGxzhJpw.jpeg" class="img-thumbnail" alt="img2">
+    </div>
+    <br>
+    <br>
+   <div style="text-align:right;" class="container"><h6>By Mohammed Imthiyas</h6>
+
+   </div>
+
+    </div>
+    <br>
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
