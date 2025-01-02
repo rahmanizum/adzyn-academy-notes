@@ -38,3 +38,11 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+pre {
+    background-color: #f8f9fa;  
+    color: #333;  
+    padding: 10px;  
+    font-size: 1rem; 
+    border-radius: 5px;  
+}
