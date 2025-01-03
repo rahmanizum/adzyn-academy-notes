@@ -105,3 +105,6 @@ pre {
     color: black;
 
 }
+.chapter-selector a{
+    text-decoration: unset;
+}
