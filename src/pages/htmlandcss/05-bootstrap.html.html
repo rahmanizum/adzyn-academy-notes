@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Overview</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bootstrap Guide</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#grid-system">Grid System</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#components">Components</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#utilities">Utilities</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sections -->
+    <div class="container mt-5">
+        <!-- Introduction Section -->
+        <section id="introduction" class="mb-5">
+            <h2>Introduction to Bootstrap</h2>Bootstrap is a free and open-source front-end framework that helps developers design and build responsive, mobile-first websites quickly and efficiently. It provides pre-styled components, a responsive grid system, and utility classes, reducing the time and effort needed for web development.</p>
+            <div class="container mt-5">
+                <h2 class="text-center"> Important Features</h2>
+                <!-- Feature 1 -->
+                <div class="mb-3">
+                    <button class="btn btn-light w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#responsive">
+                        Responsive Grid System
+                    </button>
+                    <div id="responsive" class="collapse mt-2">
+                        <p>
+                            <ul>
+                                <li>A flexible grid system allows you to create layouts that adjust to different screen sizes</li>
+                                <li>Based on a 12-column layout.
+                                    Predefined classes for creating layouts (e.g., .col-md-6 for half-width on medium devices).
+                                    Supports flexible and nested grids.</li>
+    
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-light w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#pre-designed">
+                        Pre-Designed Components
+                    </button>
+                    <div id="pre-designed" class="collapse mt-2">
+                        <p>
+                            <ul>
+                                <li>Ready to use UI components save time and effort</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-light w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#themes">
+                        Customizable Themes
+                    </button>
+                    <div id="themes" class="collapse mt-2">
+                        <p>
+                            <ul>
+                                <li>Easily customize style and themes using Sass ariables.</li>
+                                <li>change color, fonts, spacing and more.build unique themes using theming system. </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-light w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#compatibility">
+                        Cross Browser Compatibility
+                    </button>
+                    <div id="compatibility" class="collapse mt-2">
+                        <p><ul><li>Ensure consistent performance across all major browser.</li></ul></p>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-light w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#utility">
+                        Utility Classes
+                    </button>
+                    <div id="utility" class="collapse mt-2">
+                        <p><ul><li>Predefined classes to add styling without writing custom CSS.</li></ul></p>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-light w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#plugins">
+                        JavaScript Plugins
+                    </button>
+                    <div id="plugins" class="collapse mt-2">
+                        <p><ul><Li>Interactive components powered by javascript.</Li></ul></p>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-light w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#icons">
+                        Icons Integration
+                    </button>
+                    <div id="icons" class="collapse mt-2">
+                        <p><ul><li>Support icon libraries like Bootstrap icons, font awesome, or custom SVG icons.</li></ul></p>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <!-- Grid System Section -->
+        <section id="grid-system" class="mb-5">
+            <h2>Bootstrap Grid System</h2>
+            <p> The Bootstrap grid system is a flexible and responsive layout system that divides a page into a 12-column grid. It allows you to create responsive designs by defining how content should be displayed across different screen sizes. Here's an overview of how it works
+                <h4>Key Concepts of the Bootstrap Grid System</h4>
+                <dl><b>Container:</b></dl>
+                <dd>The grid system is wrapped inside a .container or .container-fluid element.<br>
+                    .container: Provides a fixed-width container that adjusts based on the screen size.<br>
+                    .container-fluid: Provides a full-width container that spans the entire width of the viewport.</dd>
+                    <dl><b>Rows:</b></dl>
+                    <dd>Rows (.row) are used to create horizontal groups of columns.<br>
+                        Each .row ensures proper alignment and spacing between columns.</dd>
+                        <dl><b>Columns:</b></dl>
+                        <dd>The grid system divides each row into 12 columns.<br>
+                         Use classes like .col, .col-<size>-<number>, where:
+                            <size> specifies the screen size (sm, md, lg, xl, xxl).
+                            <number> specifies the number of columns (1 to 12).</dd></p>
+                                <p>
+                                    <h4>Screen Size Breakpoints</h4>
+                                    <p>Bootstrap uses predefined breakpoints to create responsive designs:</p>
+                                    <img src="data:image/png;base64,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" class="img-fluid rounded mx-auto d-block width 400 height 400" alt="Bootstrap Structure">
+                                </p>
+                                <p>
+                                   <h4>How It Works</h4>
+                                   <ul>
+                                    <li>Grid System Classes: Classes like .col-md-6 apply specific widths (50% in this case) at a defined breakpoint (≥768px).</li>
+                                    <li>Percentage-based Columns: Columns are based on percentages, ensuring they adjust fluidly across screen sizes.</li>
+                                    <li>Flexbox: Bootstrap's grid system is powered by Flexbox, which provides modern alignment and distribution capabilities.</li>
+                                   </ul>
+                                </p>
+            </section>                  
+        <!-- Components Section -->
+        <section id="components" class="mb-5">
+            <h2>Bootstrap Components</h2>
+            <p>Bootstrap includes various reusable components such as buttons, cards, modals, and more. These components help streamline the development process.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <button class="btn btn-primary">Primary Button</button>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            This is a card component.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="alert alert-success" role="alert">
+                        This is a success alert!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Utilities Section -->
+        <section id="utilities">
+            <h2>Bootstrap Utilities</h2>
+            <p>Bootstrap provides a wide range of utility classes to quickly style your webpage. Examples include spacing, typography, and flexbox utilities.</p>
+            <div class="p-3 mb-2 bg-primary text-white">Primary Background</div>
+            <div class="p-3 mb-2 bg-secondary text-white">Secondary Background</div>
+        </section>
+
+        <!-- Video Section -->
+        <section id="video" class="mb-5">
+            <h2 class="text-center">Learn More About Bootstrap</h2>
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/5GcQtLDGXy8" title="Bootstrap Tutorial" allowfullscreen></iframe>
+            </div>
+          </section>
+        <!-- Help Resources Section -->
+        <section id="links" class="text-center">
+            <h2>Helpful Resources</h2>
+            <a href="https://getbootstrap.com/" class="btn btn-primary m-2" target="_blank">Bootstrap Official Website</a>
+            <a href="https://www.w3schools.com/bootstrap/" class="btn btn-success m-2" target="_blank">Bootstrap Tutorial</a>
+          </section>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
